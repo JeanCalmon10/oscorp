@@ -1,0 +1,134 @@
+<!-- pharmacies/templates/pharmacies/index.html -->
+{% extends 'pharmacies/base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <h1 id="index-title">DISTRIBUINDO SAÚDE, ENTREGANDO CONFIANÇA</h1>
+  <section>
+    <div class="container">
+      <div class="left-img">
+        <img src="{% static 'pharmacies/images/mulher-sorrindo.jpg' %}" alt="">
+      </div>
+      <div class="right-grid">
+        <div class="card">
+          <div class="background-image"></div>
+          <img class="icon" src="{% static 'pharmacies/images/comprimido.png' %}" alt="Medicine drug.">
+          <p>
+            Mais de<br> 
+            <span>50</span>
+            <br>
+            produtos
+          </p>
+        </div>
+        <div class="card">
+          <div class="background-image"></div>
+          <img class="icon" src="{% static 'pharmacies/images/escritorio.png' %}" alt="Medicine drug.">
+          <p>
+            <span>01</span>
+            <br>
+            unidade na Bahia</p>
+        </div>
+        <div class="card">
+          <div class="background-image"></div>
+          <img class="icon" src="{% static 'pharmacies/images/acordo.png' %}" alt="Medicine drug.">
+          <p>
+            Mais de<br> 
+            <span>30</span>
+            <br>
+            parceiros e fornecedores
+          </p>
+        </div>
+        <div class="card">
+          <div class="background-image"></div>
+          <img class="icon" src="{% static 'pharmacies/images/logistica.png' %}" alt="Medicine drug.">
+          <p> 
+            <span>Logística</span>
+            <br>
+            moderna e eficiente
+          </p>
+        </div>
+        <div class="card">
+          <div class="background-image"></div>
+          <img class="icon" src="{% static 'pharmacies/images/comercial.png' %}" alt="Medicine drug.">
+          <p>
+            <span>20</span>
+            <br>
+            clientes atendidos
+          </p>
+        </div>
+        <div class="card">
+          <div class="background-image"></div>
+          <img class="icon" src="{% static 'pharmacies/images/poder.png' %}" alt="Medicine drug.">
+          <p>
+            Profisssionais
+            <br>
+            <span>Qualificados</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-info">
+      <div class="info-block">
+        <div class="info-img">
+          <img src="{% static 'pharmacies/info-icons/barcode.png' %}" alt="barcode">
+        </div>
+        <div class="info-span">
+          <span>2ª via do boleto?</span>
+          <span><a href="#">Clique aqui</a></span>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-img">
+          <img src="{% static 'pharmacies/info-icons/xml-file.png' %}" alt="xml">
+        </div>
+        <div class="info-span">
+          <span>Não recebeu o xml da nota fiscal?</span>
+          <span><a href="#">Solicite aqui</a></span>
+        </div>
+      </div>
+      <div class="info-block special-info-block">
+        <div class="info-img">
+          <img src="{% static 'pharmacies/info-icons/facebook.png' %}" alt="facebook logo">
+          <img src="{% static 'pharmacies/info-icons/instagram.png' %}" alt="instagram logo">
+          <img src="{% static 'pharmacies/info-icons/linkedin.png' %}" alt="linkedin logo">
+          <div class="info-span">
+            <span></span>
+            <span>@Oscorp</span>
+          </div>
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-img">
+          <img src="{% static 'pharmacies/info-icons/whatsapp.png' %}" alt="whatsapp logo">
+        </div>
+        <div class="info-span">
+          <span>Converse conosco pelo Whatsapp</span>
+          <span><a href="#">Clique aqui</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <h2>Fornecedores</h2>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="carousel-item"><img src="{% static 'pharmacies/images/marjan-farma-bg.png' %}" alt="Marjan Farma"></div>
+        <div class="carousel-item"><img src="{% static 'pharmacies/images/Cimed.png' %}" alt="Cimed"></div>
+        <div class="carousel-item"><img src="{% static 'pharmacies/images/ems.png' %}" alt="Ems"></div>
+        <div class="carousel-item"><img src="{% static 'pharmacies/images/neoquimica.png' %}" alt="Neoquímica"></div>
+        <div class="carousel-item"><img src="{% static 'pharmacies/images/medley.png' %}" alt="Medley"></div>
+        <div class="carousel-item"><img src="{% static 'pharmacies/images/legrand.png' %}" alt="Legrand"></div>
+      </div>
+    </div>
+    <button class="carousel-prev">&#9665;</button>
+    <button class="carousel-next">&#9655;</button>
+  </section>
+  
+{% endblock %}

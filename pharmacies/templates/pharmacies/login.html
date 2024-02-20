@@ -1,0 +1,34 @@
+<!-- pharmacies/templates/pharmacies/login.html -->
+{% extends 'pharmacies/base.html' %}
+{% load static %}
+
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<div class="container-login">
+    <div class="card-login">
+        <div class="login-header">
+            <img src="{% static 'pharmacies/images/oscorp-azul.png' %}" alt="logo" id="logo">
+            {% comment %} <p class="logo-text">Pharmacy</p> {% endcomment %}
+        </div>
+        <p class="subtext">Login</p>
+        {% if error_message %}
+        <p class="error">{{ error_message }}</p>
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            <label for="username">Usuário</label>
+            {{ form.username }}
+            <label for="password">Senha</label>
+            {{ form.password }}
+            <button type="submit">Login</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Esqueceu sua senha?</a>
+        </div>
+        <div class="register-link">
+            <a href="{% url 'pharmacies:register' %}">Cadastre-se</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

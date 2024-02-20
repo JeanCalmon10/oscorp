@@ -1,0 +1,174 @@
+/* Substitua o código existente no arquivo products.css pelo seguinte: */
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.edit-title {
+    margin: 40px auto 0 auto;
+    align-content: center;
+}
+
+/* Main container styles */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Definindo 3 colunas */
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+    
+}
+
+/* Media Queries Products Container */
+@media screen and (max-width:  900px) {
+    .products-container{
+        display: flex;
+        flex-direction:column; 
+    }
+
+    .product-card {
+        text-align: center;
+        
+    }
+    
+}
+
+
+/* Individual product card styles */
+.product-card {
+    max-height: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: auto;
+    display: flex; /* Adicionamos display flex */
+    flex-direction: column; /* Definimos a direção como coluna para alinhar o conteúdo verticalmente */
+    align-items: center; /* Centralizamos o conteúdo verticalmente */
+    overflow: visible;
+}
+
+.product-card img {
+    max-width: 60%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto; /* Centralizamos horizontalmente */
+    margin-right: auto; /* Centralizamos horizontalmente */
+}
+
+.product-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    margin-bottom: 10px;
+}
+
+.price{
+    color: grey;
+    font: 22px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Style create button */
+.create-product-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #e76024;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.create-product-btn:hover {
+    background-color: #ff4e3a;
+}
+
+/* Action buttons */
+.action-buttons {
+    /* position: absolute; */
+    bottom: 10px; /* Posicionamento na parte inferior */
+    right: 10px; /* Posicionamento à direita */
+    display: flex; 
+    gap: 4rem; 
+    
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; /* Transição de cor ao passar o mouse */
+    text-decoration: none; /* Para retirar o underscore */
+}
+
+.edit-btn {
+    background-color: yellow; /* Cor de fundo do botão Editar */
+    color: black; /* Cor da fonte do botão Editar */
+}
+
+.delete-btn {
+    background-color: red; /* Cor de fundo do botão Excluir */
+    color: white; /* Cor da fonte do botão Excluir */
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse */
+}
+
+.edit-btn:active, .delete-btn:active {
+    transform: scale(0.95); /* Efeito de escala ao clicar */
+}
+
+.return-btn {
+    margin-top: 15px;
+    
+}
+
+.return-btn a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.return-btn a:hover {
+    text-decoration: underline;
+}
+
+.message-success {
+    background-color: #dff0d8; /* Cor verde clara para mensagens de sucesso */
+    color: #3c763d; /* Cor do texto escuro para contrastar com o fundo verde */
+    border:  1px solid #d6e9c6; /* Borda verde para complementar o fundo */
+    padding:  10px;
+    margin-bottom:  10px;
+    border-radius:  5px;
+}
+
+.message-error {
+    background-color: #f2dede; /* Cor vermelha clara para mensagens de erro */
+    color: #a94442; /* Cor do texto escura para contrastar com o fundo vermelho */
+    border:  1px solid #ebccd1; /* Borda vermelha para complementar o fundo */
+    padding:  10px;
+    margin-bottom:  10px;
+    border-radius:  5px;
+}

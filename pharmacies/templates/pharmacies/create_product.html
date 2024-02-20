@@ -1,0 +1,15 @@
+{% extends 'pharmacies/base.html' %}
+{% load static %}
+
+{% block title %}Criar Produto{% endblock %}
+
+{% block content %}
+<div class="edit-title"><h1>Criar Novo Produto</h1></div>
+<div class="create-product-container">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Criar Produto</button>
+    </form>
+</div>
+{% endblock %}

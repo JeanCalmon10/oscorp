@@ -1,0 +1,63 @@
+<!-- pharmacies/templates/pharmacies/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'pharmacies/style.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/login.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/register.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/products.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/create_product.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/edit_product.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/delete_product.css' %}">
+  <link rel="stylesheet" href="{% static 'pharmacies/about_us.css' %}">
+  <link rel="icon" type="image/png" href="#">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+  <script src="{% static 'pharmacies/carousel.js' %}" defer></script>
+  <title>{% block title %}Distribuidora medicamentos{% endblock %}</title>
+</head>
+<body id="body">
+  <header>
+    <div class="logo">
+      <a href="{% url "pharmacies:home" %}"><img src="{% static 'pharmacies/images/oscorp-azul.png' %}" alt="Logotipo da Distribuidora"></a>
+      <span class="logotext"></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="{% url "pharmacies:home" %}">Home</a></li>
+        <li><a href="{% url 'pharmacies:about_us' %}">Quem Somos</a></li>
+        {% if user.is_authenticated %}
+        <li><a href="{% url 'pharmacies:products' %}">Produtos</a></li>
+        <li><a href="{% url 'pharmacies:logout' %}" style="color:#bf0603">Logout</a></li>
+        {% else %}
+        <li><a href="{% url 'pharmacies:login' %}" style="color:#1ed961">Login</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </header>
+
+  {% if messages %}
+    <div>
+      <ul>
+        {% for message in messages %}
+          <li class="message-{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+      </ul>
+    </div> 
+  {% endif %} 
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    <div class="logo">
+      <a href="{% url "pharmacies:home" %}"><img src="{% static 'pharmacies/images/oscorp-azul.png' %}" alt="Logotipo da Distribuidora"></a>
+      {% comment %} <span class="logotext"></span> {% endcomment %}
+    </div>
+    <div class="footer-p">
+      <p>Oscorp&copy; 2024 Distribuidora de medicamentos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+#edit-title-delete {
+    margin: 20px auto 0 auto;
+    color: #614646;
+    display: flex; /* Torna o container um flex container */
+    justify-content: center;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+#product-image-delete {
+    margin-left: 20px;
+}
+
+#product-image-delete img {
+    width: 220px; 
+    height: 200px;
+    
+}
+
+#delete-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+    padding-bottom: 250px;
+}
+
+#delete-product-container form {
+    width: 80%; 
+    max-width: 400px; /* Largura máxima do formulário */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+/* Restante das regras de estilo para labels, inputs, textarea e button */
+/* Estilos para labels dentro do formulário */
+#delete-product-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Estilos para inputs dentro do formulário */
+#delete-product-container form input[type="text"],
+#delete-product-container form input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para textarea dentro do formulário */
+#delete-product-container form textarea {
+    height: 100px; 
+    width: 100%; 
+}
+
+/* Estilos para o botão dentro do formulário */
+#delete-product-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 16px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#delete-product-container button:hover {
+    background-color: #da190b; /* Cor de fundo vermelha mais escura ao passar o mouse */
+}
+
+

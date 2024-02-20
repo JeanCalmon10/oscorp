@@ -1,0 +1,96 @@
+{% extends "pharmacies/base.html" %}
+{% load static %}
+
+{% block title %}Quem Somos{% endblock %}
+
+{% block content %}
+<div class="about-us-container">
+    <div class="about-us-header">
+        <img src="{% static 'pharmacies/images/casal-olhando.jpg' %}" alt="Imagem Distribuidora">
+        <h1 class="about-us-title">Quem Somos</h1>
+    </div>
+    <div class="about-us-content">
+        <p> A Oscorp tem como objetivo oferecer soluções integradas e inovadoras na distribuição e comercialização de medicamentos. Contamos com 1 centro de distribuição altamente moderno para atender mais de 20 clientes diariamente.</p>
+        <br />
+        <p>Trabalhamos com as principais indústrias do mercado farmacêutico, proporcionando aos nossos clientes produtos de alto, adequado e completo calibre às farmácias, com agilidade e segurança em todas as entregas.</p>
+    </div>
+    <div class="about-us-section">
+        <div class="about-us-section-left">
+            <h2>Nossa Missão</h2>
+        </div>
+        <div class="about-us-section-right">
+            <p>Nosso compromisso é distribuir medicamentos confiáveis e de qualidade, assegurando a disponibilidade oportuna, eficiência operacional e relacionamentos sólidos. Buscamos constantemente inovar e contribuir para a saúde e prosperidade das comunidades que atendemos.</p>
+            
+        </div>
+    </div>
+    <div class="about-us-values">
+        <h2>Nossos Valores</h2>
+        <div class="about-us-cards">
+            <div class="about-us-card">
+                <div class="front">
+                    <img src="{% static 'pharmacies/images/coracao.png' %}" alt="Coração">
+                    <h3>Paixão</h3>
+                    <p>O que nos move a cada dia</p>
+                </div>
+                <div class="back">
+                    <h3>Paixão</h3>
+                    <p>Determinação e entusiasmo são atributos intrínsecos à nossa marca e equipe.</p>
+                </div>
+            </div>
+            <div class="about-us-card">
+                <div class="front">
+                    <img src="{% static 'pharmacies/images/responsabilidade.png' %}" alt="Responsabilidade">
+                    <h3>Ética e Responsabilidade</h3>
+                    <p>Nossa transparência</p>
+                </div>
+                <div class="back">
+                    <h3>Ética e Responsabilidade</h3>
+                    <p>Atuar com honestidade e integridade em todas as relações com clientes, fornecedores, colaboradores e órgãos regulatórios</p>
+                </div>
+            </div>
+            <div class="about-us-card">
+                <div class="front">
+                    <img src="{% static 'pharmacies/images/fidelidade.png' %}" alt="Coração">
+                    <h3>Fidelidade aos nossos parceiros</h3>
+                    <p>O que nos une</p>
+                </div>
+                <div class="back">
+                    <h3>Fidelidade aos nossos parceiros</h3>
+                    <p>Construindo relacionamentos fortes e duradouros</p>
+                </div>
+            </div>
+            <div class="about-us-card">
+                <div class="front">
+                    <img src="{% static 'pharmacies/images/inovacao.png' %}" alt="Coração">
+                    <h3>Inovação</h3>
+                    <p>O nosso motor</p>
+                </div>
+                <div class="back">
+                    <h3>Inovação</h3>
+                    <p>Buscar constantemente novas soluções para melhorar os serviços prestados</p>
+                </div>
+            </div>
+            <div class="about-us-card">
+                <div class="front">
+                    <img src="{% static 'pharmacies/images/melhor-pratica.png' %}" alt="Coração">
+                    <h3>Excelência e Respeito</h3>
+                    <p>Nossos pilares inabaláveis</p>
+                </div>
+                <div class="back">
+                    <h3>Excelência e Respeito</h3>
+                    <p>Oferecer produtos e serviços de alta qualidade e respeito em tudo que faz</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="about-us-section">
+        <div class="about-us-section-left">
+            <h2>Nossa Visão</h2>
+        </div>
+        <div class="about-us-section-right">
+            <p>Ser em 10 anos uma distribuidora de medicamentos referência no Nordeste em prestação de serviço, qualidade, ética e responsabilidade social. Buscando constantemente ultrapassar fronteiras, melhorar vidas e promover saúde e bem-estar.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

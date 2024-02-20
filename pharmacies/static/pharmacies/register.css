@@ -1,0 +1,122 @@
+/* pharmacies/static/pharmacies/register.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe7eb;
+} */
+
+/* Register Container Styles */
+.container-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Register Card Styles */
+.card-register {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 80%;
+}
+
+/* Register Header Styles */
+.register-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Logo Styles */
+#logo {
+    width: 80px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    margin-top: 10px; /* Adjust to vertically center with the image */
+}
+
+/* Subtext Styles */
+.subtext {
+    font-size: 25px;
+    text-align: center; /* Horizontally center */
+    margin-bottom: 30px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styles */
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input Styles */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Adicionando transição para uma mudança suave de cor */
+}
+
+/* Alterando a cor da borda quando em foco */
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff; /* Cor quando em foco */
+}
+
+/* Button Styles */
+.card-register button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.card-register button:hover {
+    background-color: #0056b3;
+}
+
+/* Login Link Styles */
+.login-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+

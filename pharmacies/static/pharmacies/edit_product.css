@@ -1,0 +1,72 @@
+.edit-title {
+    margin: 40px auto 0 auto;
+    text-align: center;
+    color: #614646;
+}
+
+.edit-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+}
+
+.edit-product-container form {
+    width: 80%; 
+    max-width: 400px; /* Largura máxima do formulário */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centralizar horizontalmente */
+}
+
+/* Restante das regras de estilo para labels, inputs, textarea e button */
+/* Estilização para labels */
+/* .edit-product-container form label {
+    display: block;
+    margin-bottom:  5px;
+    font-weight: bold;
+    font-size:  14px;
+} */
+
+.edit-product-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Estilização para inputs e textarea */
+.edit-product-container form input[type="text"],
+.edit-product-container form input[type="number"],
+.create-product-container input[type="file"],
+.edit-product-container form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.edit-product-container form textarea {
+    height: 100px; 
+    width: 100%; 
+}
+
+/* Estilização para o botão de envio */
+.edit-product-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 16px; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-product-container button:hover {
+    background-color: #0056b3;
+}

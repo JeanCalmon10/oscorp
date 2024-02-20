@@ -1,0 +1,124 @@
+/* pharmacies/static/pharmacies/login.css */
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #dfe7eb;
+} */
+
+/* Login Container Styles */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Card Styles */
+.card-login {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 80%;
+}
+
+/* Login Header Styles */
+.login-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Logo Styles */
+#logo {
+    width: 80px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+#logo-text {
+    font-size: 20px;
+    margin-top: 10px; /* Adjust to vertically center with the image */
+}
+
+/* Subtext Styles */
+.subtext {
+    font-size: 25px;
+    text-align: center; /* Horizontally center */
+    margin-bottom: 30px;
+}
+
+/* Error Message Styles */
+.error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.card-login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-login form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.card-login form input[type="text"],
+.card-login form input[type="password"] {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.card-login form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Button Styles */
+.card-login form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card-login form button:hover {
+    background-color: #0056b3;
+}
+
+/* Forgot Password & Register Link Styles */
+.forgot-password,
+.register-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.forgot-password a,
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
